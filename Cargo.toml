@@ -1,7 +1,12 @@
 [package]
-name    = "paybox"
-version = "0.0.1"
-edition = "2021"
+name         = "paybox"
+version      = "0.0.1"
+edition      = "2021"
+repository   = "https://github.com/l-7-l/paybox"
+license      = "Apache-2.0"
+license-file = "LICENSE"
+keywords     = ["alipay", "paybox", "wechatpay"]
+categories = ["finance"]
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [features]
