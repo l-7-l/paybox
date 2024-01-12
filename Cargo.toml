@@ -1,11 +1,13 @@
 [package]
-name       = "paybox"
-version    = "0.0.1"
-edition    = "2021"
-repository = "https://github.com/l-7-l/paybox"
-license    = "Apache-2.0"
-keywords   = ["alipay", "paybox", "wechatpay"]
-categories = ["finance"]
+name        = "paybox"
+version     = "0.0.1"
+edition     = "2021"
+repository  = "https://github.com/l-7-l/paybox"
+license     = "Apache-2.0"
+keywords    = ["alipay", "paybox", "wechatpay"]
+categories  = ["finance"]
+authors     = ["l-7-l cyupdev@gmail.com"]
+description = "pay's sdk. 目前支持支付宝支付和微信支付 Alipay and wechatpay supported for now. Note, not yet tested."
 
 # See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
 [features]
