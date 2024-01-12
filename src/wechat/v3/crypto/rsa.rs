@@ -31,14 +31,13 @@ pub(crate) fn verify_sign(
         signature::Verifier,
     };
 
-    let public_key = RsaPublicKey::from_public_key_der(pub_key)?;
-
-    let signature = if base64 {
-        Signature::try_from(STANDARD.decode(signature)?.as_bytes())?
+    let public_key = if base64 {
+        RsaPublicKey::from_public_key_der(&STANDARD.decode(pub_key)?)
     } else {
-        Signature::try_from(signature)?
-    };
+        RsaPublicKey::from_public_key_der(pub_key)
+    }?;
 
+    let signature = Signature::try_from(signature)?;
     let verifying_key: VerifyingKey<Sha256> = VerifyingKey::from(public_key.clone());
 
     verifying_key.verify(msg, &signature)?;

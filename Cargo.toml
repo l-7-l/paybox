@@ -1,6 +1,6 @@
 [package]
 name        = "paybox"
-version     = "0.0.1"
+version     = "0.0.2"
 edition     = "2021"
 repository  = "https://github.com/l-7-l/paybox"
 license     = "Apache-2.0"
